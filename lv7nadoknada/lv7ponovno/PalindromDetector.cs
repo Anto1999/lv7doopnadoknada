@@ -8,6 +8,8 @@ namespace lv7ponovno
     {
         public bool CheckIsPalindrom(string myString)
         {
+            myString = myString.ToLower();
+            myString = myString.Replace(" ","");
             string first = myString.Substring(0, myString.Length / 2);
             char[] arr = myString.ToCharArray();
 
